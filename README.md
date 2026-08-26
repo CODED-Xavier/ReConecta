@@ -37,40 +37,42 @@ O produto está organizado em quatro pilares:
 ## Estrutura do projeto
 
 ```text
-ReConecta-Reconstrucao-Profissional-v3/
-├── .vscode/
-│   ├── launch.json       # Configuração de depuração no Chrome
-│   └── tasks.json        # Servidor local iniciado pelo VS Code
-└── ReConecta/
-    ├── index.html        # Página inicial
-    ├── README.md
-    ├── assets/
-    │   ├── css/
-    │   │   └── style.css  # Estilos globais e responsivos
-    │   └── js/
-    │       └── app.js     # Busca, filtros, menus, contadores e ações
-    ├── pages/             # Páginas públicas do produto
-    │   ├── capacidade.html
-    │   ├── contato.html
-    │   ├── inteligencia.html
-    │   ├── leitos.html
-    │   ├── mobilidade.html
-    │   ├── profissionais.html
-    │   ├── sobre.html
-    │   └── transferencias.html
-    └── dashboard/         # Área operacional demonstrativa
-        ├── index.html
-        ├── alertas.html
-        ├── capacidade.html
-        ├── configuracoes.html
-        ├── inteligencia.html
-        ├── leitos.html
-        ├── mobilidade.html
-        ├── operacao.html
-        ├── profissionais.html
-        ├── relatorios.html
-        └── transferencias.html
+ReConecta/
+├── README.md
+├── Front-end/
+│   ├── index.html        # Página inicial
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── style.css # Estilos globais e responsivos
+│   │   └── js/
+│   │       └── app.js    # Busca, filtros, menus e ações
+│   ├── pages/            # Páginas públicas do produto
+│   │   ├── capacidade.html
+│   │   ├── contato.html
+│   │   ├── inteligencia.html
+│   │   ├── leitos.html
+│   │   ├── mobilidade.html
+│   │   ├── profissionais.html
+│   │   ├── sobre.html
+│   │   └── transferencias.html
+│   └── dashboard/        # Área operacional demonstrativa
+│       ├── index.html
+│       ├── alertas.html
+│       ├── capacidade.html
+│       ├── configuracoes.html
+│       ├── inteligencia.html
+│       ├── leitos.html
+│       ├── mobilidade.html
+│       ├── operacao.html
+│       ├── profissionais.html
+│       ├── relatorios.html
+│       └── transferencias.html
+├── index.html             # Página legada do repositório original
+├── script.js              # Script legado
+└── stylesheet.css         # Folha de estilos legada
 ```
+
+O desenvolvimento atual está concentrado em `Front-end/`. Os arquivos na raiz são mantidos por compatibilidade com a estrutura original do repositório.
 
 ## Como acessar
 
@@ -83,7 +85,7 @@ Instale o Python 3. O projeto não possui backend nem etapa de instalação de p
 Na raiz do repositório, execute:
 
 ```powershell
-Set-Location .\ReConecta
+Set-Location .\Front-end
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
@@ -102,15 +104,11 @@ Rotas principais:
 
 ### Pelo VS Code
 
-1. Abra a pasta `ReConecta-Reconstrucao-Profissional-v3` no VS Code.
-2. Pressione `F5` ou acesse **Run and Debug**.
-3. Selecione **Launch Chrome against localhost**.
-
-O VS Code executa a tarefa `Serve ReConecta`, inicia o servidor Python na porta `8080` e abre o Chrome em `127.0.0.1`.
+Abra a pasta `Front-end` no VS Code e inicie o servidor pelo terminal integrado usando o comando acima. Depois, abra `http://127.0.0.1:8080/` no navegador.
 
 ## Breakpoints e responsividade
 
-Os principais pontos de quebra estão definidos em `assets/css/style.css`:
+Os principais pontos de quebra estão definidos em `Front-end/assets/css/style.css`:
 
 | Largura | Comportamento |
 | --- | --- |
@@ -132,13 +130,13 @@ Este é um protótipo frontend. Os nomes, números, hospitais, status e indicado
 
 ## Validação
 
-As verificações realizadas no projeto incluem:
+Para validar a sintaxe do JavaScript:
 
 ```powershell
-node --check .\ReConecta\assets\js\app.js
+node --check .\Front-end\assets\js\app.js
 ```
 
-Também foram conferidos os caminhos locais entre páginas e assets, a estrutura do CSS, a configuração do VS Code e os fluxos de busca e filtros no navegador.
+Também devem ser conferidos os caminhos locais entre páginas e assets, a estrutura do CSS e os fluxos de busca e filtros no navegador.
 
 ## Próximos passos
 
