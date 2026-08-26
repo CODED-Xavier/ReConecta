@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Mobilidade — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard">
+    <div class="dash-scrim scrim"></div>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>Painel operacional</small></span></a>
+            <nav class="sidebar-nav">
+                <a class="" href="index.html"><span class="nav-icon">◈</span>Visão geral</a>
+                <a class="" href="capacidade.html"><span class="nav-icon">▦</span>Capacidade</a>
+                <a class="active" href="mobilidade.html"><span class="nav-icon">↗</span>Mobilidade</a>
+                <a class="" href="transferencias.html"><span class="nav-icon">⇄</span>Transferências</a>
+                <a class="" href="alertas.html"><span class="nav-icon">!</span>Alertas</a>
+                <a class="" href="inteligencia.html"><span class="nav-icon">⌁</span>Inteligência</a>
+                <a class="" href="relatorios.html"><span class="nav-icon">◴</span>Relatórios</a>
+                <a class="" href="configuracoes.html"><span class="nav-icon">⚙</span>Configurações</a>
+                <a class="" href="operacao.html"><span class="nav-icon">◫</span>Operação</a>
+            </nav>
+            <div class="sidebar-bottom"><span>DADOS DEMONSTRATIVOS</span><a href="../index.html"
+                    style="display:block;margin-top:10px">← Voltar ao site</a></div>
+        </aside>
+        <section class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1>Mobilidade</h1><span>Rede demonstrativa · atualização operacional em tempo real</span>
+                </div>
+                <div class="top-actions"><button class="icon-btn mobile-sidebar-toggle"
+                        aria-label="Abrir menu">☰</button><button class="icon-btn js-action"
+                        data-message="Central de notificações aberta.">●</button>
+                    <div class="avatar">GE</div>
+                </div>
+            </header>
+            <main class="dashboard-content">
+                <div class="section-head" style="margin-bottom:22px"><span class="eyebrow">02 · Mobilidade</span>
+                    <h2>Recursos em movimento</h2>
+                    <p class="section-lead">Acompanhe macas, ambulâncias e recursos que podem viabilizar transferências.
+                    </p>
+                </div>
+                <div class="kpi-grid">
+                    <div class="card kpi"><small>Macas disponíveis</small><strong>38</strong><span class="trend">↑ 4
+                            agora</span></div>
+                    <div class="card kpi"><small>Macas retidas</small><strong>12</strong><span
+                            style="font-size:10px;color:var(--danger)">+3 em 30 min</span></div>
+                    <div class="card kpi"><small>Ambulâncias disponíveis</small><strong>21</strong><span
+                            class="trend">62% da frota</span></div>
+                    <div class="card kpi"><small>Em transferência</small><strong>14</strong><span class="trend">fluxo
+                            ativo</span></div>
+                    <div class="card kpi"><small>Indisponíveis</small><strong>7</strong><span
+                            style="font-size:10px;color:var(--danger)">2 por retenção</span></div>
+                </div>
+                <section class="card panel" style="margin-top:14px">
+                    <div class="panel-head">
+                        <h2>Status dos recursos</h2><span>Atualizado há 2 min</span>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Recurso</th>
+                                    <th>Local</th>
+                                    <th>Status</th>
+                                    <th>Origem</th>
+                                    <th>Destino</th>
+                                    <th>Tempo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Maca #118</td>
+                                    <td>Hospital Y</td>
+                                    <td><span class="status danger">RETIDA</span></td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>2h17</td>
+                                </tr>
+                                <tr>
+                                    <td>Ambulância #042</td>
+                                    <td>Em rota</td>
+                                    <td><span class="status info">TRANSFERÊNCIA</span></td>
+                                    <td>Hospital A</td>
+                                    <td>Hospital B</td>
+                                    <td>14:32</td>
+                                </tr>
+                                <tr>
+                                    <td>Maca #204</td>
+                                    <td>Hospital Regional X</td>
+                                    <td><span class="status ok">DISPONÍVEL</span></td>
+                                    <td>—</td>
+                                    <td>—</td>
+                                    <td>2 min</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
