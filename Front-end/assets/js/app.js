@@ -133,8 +133,20 @@
     $$('.sidebar-nav a').forEach(a=>a.addEventListener('click',close));
   }
 
+  function setupThemeToggle(){
+    const btn=$('.theme-toggle'); if(!btn)return;
+    const stored=localStorage.getItem('theme');
+    if(stored==='dark'||(stored===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){
+      document.body.classList.add('dark-mode');
+    }
+    btn.addEventListener('click',()=>{
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme',document.body.classList.contains('dark-mode')?'dark':'light');
+    });
+  }
+
   function setup(){
-    setupHeader();activeNav();setupSearch();counters();reveal();setupActions();setupFilters();setupContact();setupDashboardMenu();
+    setupHeader();activeNav();setupSearch();counters();reveal();setupActions();setupFilters();setupContact();setupDashboardMenu();setupThemeToggle();
   }
   document.addEventListener('DOMContentLoaded',setup);
 })();
