@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Leitos e capacidade — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>por HeaLine</small></span></a>
+            <nav class="main-nav">
+                <a class="" href="../index.html">Início</a>
+                <a class="active" href="../pages/capacidade.html">Capacidade</a>
+                <a class="" href="../pages/mobilidade.html">Mobilidade</a>
+                <a class="" href="../pages/transferencias.html">Transferências</a>
+                <a class="" href="../pages/inteligencia.html">Inteligência</a>
+            </nav>
+            <div class="header-actions"><a class="btn btn-ghost" href="../pages/sobre.html">Conheça a solução</a><a
+                    class="btn btn-primary" href="../dashboard/index.html">Acessar plataforma</a><button
+                    class="nav-toggle" aria-label="Abrir menu"><span></span></button></div>
+        </div>
+    </header>
+    <div class="scrim"></div>
+    <aside class="drawer">
+        <nav>
+            <a href="../index.html">Início</a><a href="../pages/capacidade.html">Capacidade</a><a
+                href="../pages/mobilidade.html">Mobilidade</a><a
+                href="../pages/transferencias.html">Transferências</a><a
+                href="../pages/inteligencia.html">Inteligência</a><a href="../pages/sobre.html">Sobre</a><a
+                href="../pages/contato.html">Contato</a>
+        </nav>
+        <div class="drawer-actions"><a class="btn btn-ghost btn-block" href="../pages/contato.html">Falar com a
+                gente</a><a class="btn btn-primary btn-block" href="../dashboard/index.html">Acessar plataforma</a>
+        </div>
+    </aside>
+    <main>
+        <section class="page-hero">
+            <div class="container"><span class="eyebrow">Capacidade da rede</span>
+                <h1>Leitos são uma parte da capacidade da rede.</h1>
+                <p>Visualize leitos por hospital, setor e tipo, sem perder o contexto operacional da unidade.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="filters"><input class="field" data-filter-input
+                        placeholder="Buscar hospital, especialidade ou setor..."><select class="field"
+                        data-filter-select data-filter="city">
+                        <option value="">Todas as cidades</option>
+                        <option value="Recife">Recife</option>
+                        <option value="Jaboatão">Jaboatão</option>
+                        <option value="Caruaru">Caruaru</option>
+                    </select><select class="field" data-filter-select data-filter="type">
+                        <option value="">Todos os tipos</option>
+                        <option value="UTI Adulto">UTI Adulto</option>
+                        <option value="Clínica médica">Clínica médica</option>
+                        <option value="Emergência">Emergência</option>
+                    </select><span class="muted" data-result-count></span></div>
+                <div class="results-layout">
+                    <div class="result-list">
+                        <article class="card hospital-card" data-item data-city="Recife" data-type="UTI Adulto">
+                            <div class="hospital-head">
+                                <div>
+                                    <h3>Hospital Esperança Recife</h3><span class="muted">Recife · UTI Adulto</span>
+                                </div><span class="status ok">DISPONÍVEL</span>
+                            </div>
+                            <div class="hospital-meta"><span>8 leitos livres</span><span>Equipe
+                                    disponível</span><span>Atualizado há 1 min</span></div>
+                            <div class="capacity"><span style="width:78%"></span></div>
+                            <div class="result-actions"><small class="muted">Ocupação 78%</small><button
+                                    class="btn btn-ghost js-action"
+                                    data-message="Detalhes de capacidade abertos na demonstração.">Ver
+                                    capacidade</button></div>
+                        </article>
+                        <article class="card hospital-card" data-item data-city="Jaboatão" data-type="Clínica médica">
+                            <div class="hospital-head">
+                                <div>
+                                    <h3>Hospital Memorial Guararapes</h3><span class="muted">Jaboatão · Clínica
+                                        médica</span>
+                                </div><span class="status ok">DISPONÍVEL</span>
+                            </div>
+                            <div class="hospital-meta"><span>14 leitos livres</span><span>3
+                                    profissionais</span><span>Atualizado há 2 min</span></div>
+                            <div class="capacity"><span style="width:62%"></span></div>
+                            <div class="result-actions"><small class="muted">Ocupação 62%</small><button
+                                    class="btn btn-ghost js-action"
+                                    data-message="Capacidade detalhada disponível na demonstração.">Ver
+                                    capacidade</button></div>
+                        </article>
+                        <article class="card hospital-card" data-item data-city="Caruaru" data-type="UTI Adulto">
+                            <div class="hospital-head">
+                                <div>
+                                    <h3>Hospital Regional do Agreste</h3><span class="muted">Caruaru · UTI Adulto</span>
+                                </div><span class="status warn">POUCAS VAGAS</span>
+                            </div>
+                            <div class="hospital-meta"><span>3 leitos livres</span><span>1 equipe</span><span>Atualizado
+                                    há 3 min</span></div>
+                            <div class="capacity"><span style="width:91%"></span></div>
+                            <div class="result-actions"><small class="muted">Ocupação 91%</small><button
+                                    class="btn btn-ghost js-action"
+                                    data-message="Capacidade detalhada disponível na demonstração.">Ver
+                                    capacidade</button></div>
+                        </article>
+                    </div>
+                    <aside class="card map-panel"><span class="eyebrow">Mapa da rede</span>
+                        <h3 style="font:600 18px var(--display);margin:13px 0 4px">Capacidade distribuída</h3>
+                        <p class="muted" style="font-size:11px;margin:0 0 12px">Visualização conceitual por unidade.</p>
+                        <div class="map-grid"><i class="map-dot" style="left:28%;top:48%"></i><i class="map-dot teal"
+                                style="left:62%;top:32%"></i><i class="map-dot" style="left:72%;top:68%"></i><i
+                                class="map-dot teal" style="left:45%;top:72%"></i></div>
+                        <div class="map-legend"><span><i class="dot"
+                                    style="background:var(--blue)"></i>capacidade</span><span><i class="dot"
+                                    style="background:var(--teal)"></i>boa disponibilidade</span></div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="white" stroke-width="2.4">
+                                <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                            </svg></span><span>ReConecta<small>por HeaLine</small></span></a>
+                    <p style="margin-top:14px;max-width:260px">Inteligência e coordenação para conectar a capacidade da
+                        rede de saúde.</p>
+                </div>
+                <div>
+                    <h4>Rede</h4><a href="../pages/capacidade.html">Capacidade</a><a
+                        href="../pages/mobilidade.html">Mobilidade</a><a
+                        href="../pages/transferencias.html">Transferências</a>
+                </div>
+                <div>
+                    <h4>Produto</h4><a href="../pages/inteligencia.html">Inteligência</a><a
+                        href="../dashboard/index.html">Plataforma</a><a href="../pages/sobre.html">Sobre o ReConecta</a>
+                </div>
+                <div>
+                    <h4>Contato</h4><a href="../pages/contato.html">Fale com a gente</a><a
+                        href="../pages/contato.html?tipo=hospital">Conectar hospital</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HeaLine · ReConecta</span><span>Dados demonstrativos para
+                    protótipo</span></div>
+        </div>
+    </footer>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Operação — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard">
+    <div class="dash-scrim scrim"></div>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2.4">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small style="color:#9eabc0">Painel hospitalar</small></span></a>
+            <nav class="sidebar-nav"><a class="" href="index.html">◫ <span>Visão geral</span></a><a class="active"
+                    href="operacao.html">◫ <span>Operação</span></a><a class="" href="leitos.html">◫
+                    <span>Leitos</span></a><a class="" href="profissionais.html">◫ <span>Profissionais</span></a><a
+                    class="" href="alertas.html">◫ <span>Alertas</span></a><a class="" href="relatorios.html">◫
+                    <span>Relatórios</span></a><a class="" href="configuracoes.html">◫ <span>Configurações</span></a>
+            </nav>
+            <div class="sidebar-bottom"><span style="font-size:10px">DADOS DEMONSTRATIVOS</span><a href="../index.html"
+                    style="display:block;margin-top:10px;font-size:12px">← Voltar ao site</a></div>
+        </aside>
+        <section class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1>Operação</h1><span>Acompanhe entradas, altas, transferências e sinais do hospital.</span>
+                </div>
+                <div class="top-actions"><button class="icon-btn mobile-sidebar-toggle" aria-label="Abrir menu">☰</button>
+                    <div class="avatar" style="width:38px;height:38px;border-radius:10px">GE</div>
+                </div>
+            </header>
+            <main class="dashboard-content">
+                <div class="section-head" style="margin-bottom:25px"><span class="eyebrow">Painel ReConecta</span>
+                    <h2 style="font-size:32px">Operação</h2>
+                    <p class="section-lead">Acompanhe entradas, altas, transferências e sinais do hospital.</p>
+                </div>
+                <div class="grid three">
+                    <div class="card panel">
+                        <div class="panel-head">
+                            <h2>Entradas</h2>
+                        </div>
+                        <div class="metric" style="font-size:30px">42</div><span class="muted">últimas 24h</span>
+                    </div>
+                    <div class="card panel">
+                        <div class="panel-head">
+                            <h2>Altas</h2>
+                        </div>
+                        <div class="metric" style="font-size:30px">31</div><span class="muted">últimas 24h</span>
+                    </div>
+                    <div class="card panel">
+                        <div class="panel-head">
+                            <h2>Transferências</h2>
+                        </div>
+                        <div class="metric" style="font-size:30px">09</div><span class="muted">últimas 24h</span>
+                    </div>
+                </div>
+                <section class="card panel" style="margin-top:15px">
+                    <div class="panel-head">
+                        <h2>Timeline operacional</h2><span>Hoje</span>
+                    </div>
+                    <div class="alert-list">
+                        <div class="alert"><i class="bullet" style="background:var(--success)"></i>
+                            <div><strong>14:32 · 4 altas registradas</strong><span>Clínica médica · capacidade
+                                    atualizada</span></div>
+                        </div>
+                        <div class="alert"><i class="bullet" style="background:var(--info)"></i>
+                            <div><strong>13:58 · transferência recebida</strong><span>UTI adulto · leito 204</span>
+                            </div>
+                        </div>
+                        <div class="alert"><i class="bullet" style="background:var(--warning)"></i>
+                            <div><strong>12:41 · ocupação acima de 85%</strong><span>Obstetrícia · atenção
+                                    recomendada</span></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

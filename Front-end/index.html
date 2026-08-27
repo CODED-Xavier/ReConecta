@@ -1,335 +1,262 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ReConecta — Chega de peregrinação pela saúde | HeaLine</title>
-<meta name="description" content="ReConecta é a plataforma da HeaLine que conecta hospitais, profissionais de saúde e pacientes em Pernambuco, com leitos e especialistas visíveis em tempo real.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d4ed8'/%3E%3Cpath d='M8 34h9l6-15 8 30 6-22 5 7h14' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ReConecta — Conecte a capacidade da rede</title>
+    <meta name="description"
+        content="ReConecta conecta capacidade, mobilidade e transferências para tornar a rede de saúde mais coordenada e inteligente.">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-<header class="site-header">
-  <div class="container">
-    <a href="index.html" class="brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-7 4 14 3-10 2 5h5"/></svg>
-      </span>
-      <span>ReConecta<small>por HeaLine</small></span>
-    </a>
-    <nav class="main-nav" aria-label="Navegação principal">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="profissionais.html">Profissionais</a>
-      <a href="leitos.html">Leitos</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-    <div class="header-actions">
-      <a href="contato.html?tipo=cadastro" class="btn btn--ghost">Falar com a gente</a>
-      <a href="contato.html?tipo=cadastro" class="btn btn--primary">Cadastro</a>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Abrir menu"><span class="bar"></span></button>
-    </div>
-  </div>
-</header>
-<div class="scrim"></div>
-<div class="mobile-drawer">
-  <nav aria-label="Navegação mobile">
-    <a href="index.html" aria-current="page">Home</a>
-    <a href="sobre.html">Sobre</a>
-    <a href="profissionais.html">Profissionais</a>
-    <a href="leitos.html">Leitos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-  <div class="drawer-actions">
-    <a href="contato.html?tipo=cadastro" class="btn btn--ghost btn--block">Falar com a gente</a>
-    <a href="contato.html?tipo=cadastro" class="btn btn--primary btn--block">Cadastro</a>
-  </div>
-</div>
+<body><a class="skip" href="#main">Pular para o conteúdo</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>por HeaLine</small></span></a>
+            <nav class="main-nav">
+                <a class="active" href="index.html">Início</a>
+                <a class="" href="pages/capacidade.html">Capacidade</a>
+                <a class="" href="pages/mobilidade.html">Mobilidade</a>
+                <a class="" href="pages/transferencias.html">Transferências</a>
+                <a class="" href="pages/inteligencia.html">Inteligência</a>
+            </nav>
+            <div class="header-actions"><a class="btn btn-ghost" href="pages/sobre.html">Conheça a solução</a><a
+                    class="btn btn-primary" href="dashboard/index.html">Acessar plataforma</a><button class="nav-toggle"
+                    aria-label="Abrir menu"><span></span></button></div>
+        </div>
+    </header>
+    <div class="scrim"></div>
+    <aside class="drawer">
+        <nav>
+            <a href="index.html">Início</a><a href="pages/capacidade.html">Capacidade</a><a
+                href="pages/mobilidade.html">Mobilidade</a><a href="pages/transferencias.html">Transferências</a><a
+                href="pages/inteligencia.html">Inteligência</a><a href="pages/sobre.html">Sobre</a><a
+                href="pages/contato.html">Contato</a>
+        </nav>
+        <div class="drawer-actions"><a class="btn btn-ghost btn-block" href="pages/contato.html">Falar com a gente</a><a
+                class="btn btn-primary btn-block" href="dashboard/index.html">Acessar plataforma</a></div>
+    </aside>
+    <main id="main">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy"><span class="eyebrow">HeaLine · inteligência em saúde</span>
+                    <h1>Não é só encontrar um leito.<br><em>É conectar a capacidade da rede.</em></h1>
+                    <p>O ReConecta conecta hospitais, profissionais, recursos de transporte e transferências em uma
+                        visão operacional compartilhada — para que a rede use melhor o que já possui.</p>
+                    <div class="searchbox">
+                        <form class="searchbar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <circle cx="11" cy="11" r="7" />
+                                <path d="m21 21-4.3-4.3" />
+                            </svg><input data-search aria-label="Buscar capacidade ou especialidade"
+                                placeholder="Buscar Cardiologia, UTI, hospital..." autocomplete="off"><button
+                                class="btn btn-primary" type="submit">Explorar</button></form>
+                        <div class="suggestions" role="listbox"></div>
+                    </div>
+                    <div class="hero-actions"><a class="btn btn-primary" href="pages/transferencias.html">Explorar
+                            transferências</a><a class="btn btn-ghost" href="dashboard/index.html">Ver visão da rede</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div><strong data-count="82">0</strong><span>Hospitais conectados</span></div>
+                        <div><strong data-count="2480" data-suffix="+">0</strong><span>Recursos monitorados</span></div>
+                        <div><strong data-count="18" data-suffix=" min">0</strong><span>Tempo médio de resposta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="network-card">
+                    <div class="network-top"><span class="live"><i></i> REDE AO VIVO</span><span
+                            style="opacity:.65;font-size:10px">atualizado agora</span></div>
+                    <div class="network-title">
+                        <h2>Visão compartilhada da rede</h2>
+                        <p>Capacidade, mobilidade e gargalos em um só lugar.</p>
+                    </div>
+                    <div class="network-map"><svg viewBox="0 0 600 350" fill="none">
+                            <path d="M60 260C150 160 190 300 280 180S420 90 530 210" stroke="rgba(255,255,255,.24)"
+                                stroke-width="2" stroke-dasharray="7 8" />
+                            <path d="M60 260L170 205L280 180L410 120L530 210" stroke="#fff" stroke-width="3"
+                                stroke-linecap="round" />
+                            <g fill="#8df0ce" stroke="#fff" stroke-width="4">
+                                <circle cx="60" cy="260" r="8" />
+                                <circle cx="170" cy="205" r="8" />
+                                <circle cx="280" cy="180" r="8" />
+                                <circle cx="410" cy="120" r="8" />
+                                <circle cx="530" cy="210" r="8" />
+                            </g>
+                        </svg></div>
+                    <div class="network-mini">
+                        <div><strong>147</strong><span>leitos disponíveis</span></div>
+                        <div><strong>23</strong><span>transferências</span></div>
+                        <div><strong>12</strong><span>macas retidas</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<main id="conteudo">
+        <section class="section">
+            <div class="container">
+                <div class="section-head"><span class="eyebrow">O problema que conectamos</span>
+                    <h2>A rede possui recursos. O desafio é coordená-los.</h2>
+                    <p class="section-lead">Uma unidade pode estar saturada enquanto outra possui capacidade, mas a
+                        transferência trava por falta de informação operacional, transporte ou recurso disponível.</p>
+                </div>
+                <div class="three grid">
+                    <article class="card feature reveal"><span class="feature-icon">01</span>
+                        <h3>Capacidade dispersa</h3>
+                        <p>Leitos, profissionais, equipamentos e setores existem em pontos diferentes da rede e nem
+                            sempre estão visíveis em conjunto.</p>
+                    </article>
+                    <article class="card feature reveal"><span class="feature-icon">02</span>
+                        <h3>Mobilidade limitada</h3>
+                        <p>Macas e ambulâncias podem ficar retidas, reduzindo a capacidade de resposta para novas
+                            transferências.</p>
+                    </article>
+                    <article class="card feature reveal"><span class="feature-icon">03</span>
+                        <h3>Transferências travadas</h3>
+                        <p>Uma solicitação pode aguardar enquanto a rede tenta encontrar destino, compatibilidade e
+                            recurso para realizar o deslocamento.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-copy">
-        <span class="eyebrow">HeaLine apresenta</span>
-        <h1>Chega de <em>peregrinação</em> pela saúde.</h1>
-        <p>O ReConecta liga hospitais, profissionais e pacientes de Pernambuco numa rede só — com leitos, especialistas e equipes visíveis em tempo real, para ninguém rodar de porta em porta em busca de atendimento.</p>
+        <section class="section alt">
+            <div class="container">
+                <div class="section-head"><span class="eyebrow">Quatro pilares</span>
+                    <h2>Uma visão única da capacidade operacional.</h2>
+                </div>
+                <div class="four grid">
+                    <a class="card pillar-card reveal" href="pages/capacidade.html"><span class="num">01 ·
+                            CAPACIDADE</span>
+                        <h3>Onde existe capacidade agora?</h3>
+                        <p>Visualize os recursos disponíveis na rede.</p>
+                        <ul>
+                            <li>Leitos e setores</li>
+                            <li>Profissionais</li>
+                            <li>Equipamentos e salas</li>
+                        </ul>
+                    </a>
+                    <a class="card pillar-card reveal" href="pages/mobilidade.html"><span class="num">02 ·
+                            MOBILIDADE</span>
+                        <h3>O que pode se deslocar?</h3>
+                        <p>Monitore recursos que viabilizam o transporte.</p>
+                        <ul>
+                            <li>Ambulâncias</li>
+                            <li>Macas</li>
+                            <li>Equipes e transporte</li>
+                        </ul>
+                    </a>
+                    <a class="card pillar-card reveal" href="pages/transferencias.html"><span class="num">03 ·
+                            TRANSFERÊNCIA</span>
+                        <h3>Como movimentar o paciente?</h3>
+                        <p>Organize solicitações e acompanhe o fluxo.</p>
+                        <ul>
+                            <li>Compatibilidade</li>
+                            <li>Hospitais de destino</li>
+                            <li>Status da transferência</li>
+                        </ul>
+                    </a>
+                    <a class="card pillar-card reveal" href="pages/inteligencia.html"><span class="num">04 ·
+                            INTELIGÊNCIA</span>
+                        <h3>Onde a rede vai saturar?</h3>
+                        <p>Transforme histórico em antecipação.</p>
+                        <ul>
+                            <li>Previsão de ocupação</li>
+                            <li>Gargalos</li>
+                            <li>Disponibilidade futura</li>
+                        </ul>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <div class="quick-search">
-          <form role="search" aria-label="Buscar especialidade">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-            <input type="text" placeholder="Buscar especialidade — ex: Cardiologia, Pediatria..." aria-label="Buscar especialidade" autocomplete="off">
-            <button type="submit" class="btn btn--primary btn--sm">Buscar</button>
-          </form>
-          <div class="autocomplete" role="listbox"></div>
-          <p class="quick-search-hint">Comece digitando: sugestões aparecem em tempo real.</p>
-        </div>
+        <section class="section">
+            <div class="container">
+                <div class="network-strip">
+                    <div>
+                        <h3>Visão da rede em tempo real</h3>
+                        <p>Dados demonstrativos para ilustrar o conceito.</p>
+                    </div>
+                    <div><strong>82%</strong><span>ocupação geral</span></div>
+                    <div><strong>147</strong><span>leitos disponíveis</span></div>
+                    <div><strong>7</strong><span>ambulâncias indisponíveis</span></div>
+                </div>
+            </div>
+        </section>
 
-        <div class="hero-actions">
-          <a href="leitos.html" class="btn btn--primary">Ver leitos em tempo real</a>
-          <a href="profissionais.html" class="btn btn--ghost">Sou profissional de saúde</a>
-        </div>
+        <section class="section alt">
+            <div class="container">
+                <div class="section-head"><span class="eyebrow">Como funciona</span>
+                    <h2>Da necessidade à coordenação.</h2>
+                </div>
+                <div class="flow">
+                    <div class="flow-step reveal"><span class="step">01</span>
+                        <h3>Solicitar</h3>
+                        <p>Uma unidade registra a necessidade e os requisitos da transferência.</p>
+                    </div>
+                    <div class="flow-step reveal"><span class="step">02</span>
+                        <h3>Encontrar</h3>
+                        <p>O sistema cruza capacidade, perfil assistencial, distância e recursos.</p>
+                    </div>
+                    <div class="flow-step reveal"><span class="step">03</span>
+                        <h3>Recomendar</h3>
+                        <p>O ReConecta apresenta correspondências para apoiar NIR e regulação.</p>
+                    </div>
+                    <div class="flow-step reveal"><span class="step">04</span>
+                        <h3>Acompanhar</h3>
+                        <p>Macas, ambulâncias e status são atualizados durante o ciclo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="hero-stats">
-          <div><strong data-count-to="82">0</strong><span>Hospitais conectados</span></div>
-          <div><strong data-count-to="2400" data-suffix="+">0</strong><span>Profissionais cadastrados</span></div>
-          <div><strong data-count-to="18" data-suffix=" min">0</strong><span>Tempo médio p/ achar um leito</span></div>
+        <section class="section">
+            <div class="container">
+                <div class="cta">
+                    <div>
+                        <h2>O ReConecta não cria novos recursos.</h2>
+                        <p>Ele conecta melhor os recursos que a rede já possui.</p>
+                    </div>
+                    <div class="cta-actions"><a class="btn btn-primary" href="dashboard/index.html">Conhecer a
+                            plataforma</a><a class="btn btn-ghost" href="pages/contato.html">Conectar instituição</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><a class="brand" href="index.html"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"
+                                stroke="white" stroke-width="2.4">
+                                <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                            </svg></span><span>ReConecta<small>por HeaLine</small></span></a>
+                    <p style="margin-top:14px;max-width:260px">Inteligência e coordenação para conectar a capacidade da
+                        rede de saúde.</p>
+                </div>
+                <div>
+                    <h4>Rede</h4><a href="pages/capacidade.html">Capacidade</a><a
+                        href="pages/mobilidade.html">Mobilidade</a><a
+                        href="pages/transferencias.html">Transferências</a>
+                </div>
+                <div>
+                    <h4>Produto</h4><a href="pages/inteligencia.html">Inteligência</a><a
+                        href="dashboard/index.html">Plataforma</a><a href="pages/sobre.html">Sobre o ReConecta</a>
+                </div>
+                <div>
+                    <h4>Contato</h4><a href="pages/contato.html">Fale com a gente</a><a
+                        href="pages/contato.html?tipo=hospital">Conectar hospital</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><span>© 2026 HeaLine · ReConecta</span><span>Dados demonstrativos para
+                    protótipo</span></div>
         </div>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="pulse-card">
-          <svg class="pulse-line-svg" viewBox="0 0 400 420" preserveAspectRatio="xMidYMid meet">
-            <path class="trace" d="M20,300 L70,300 L95,230 L130,320 Q150,340 165,250 L190,150 L215,340 L245,190 L270,270 L300,140 L325,230 L360,230 L380,230"/>
-            <circle class="node" cx="70" cy="300" r="6" style="animation-delay:.1s"/>
-            <circle class="node" cx="190" cy="150" r="6" style="animation-delay:.35s"/>
-            <circle class="node" cx="300" cy="140" r="6" style="animation-delay:.6s"/>
-            <circle class="node" cx="380" cy="230" r="6" style="animation-delay:.85s"/>
-          </svg>
-          <div class="pulse-card-footer">
-            <span class="live-tag"><span class="dot"></span> Rede ao vivo</span>
-            <h3>82 hospitais conectados</h3>
-            <p>Ocupação, especialistas e alertas atualizados a cada minuto em todo o estado.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- O PROBLEMA -->
-  <section class="section reveal">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">O problema</span>
-        <h2 class="section-title">Pernambuco perde tempo — e vidas — nessa peregrinação.</h2>
-        <p class="section-sub">Sem visibilidade sobre a rede, paciente, família e até ambulâncias vão de hospital em hospital até encontrar uma vaga. O custo disso é medido em minutos que deveriam ser de cuidado.</p>
-      </div>
-      <div class="grid problem-grid">
-        <div class="problem-card">
-          <span class="num">+38 min em média</span>
-          <h3>Pacientes rodando entre unidades</h3>
-          <p>Sem saber onde há vaga, famílias e equipes de resgate perdem tempo precioso ligando de hospital em hospital.</p>
-        </div>
-        <div class="problem-card">
-          <span class="num">Zero visão de rede</span>
-          <h3>Hospitais no escuro sobre a região</h3>
-          <p>Cada unidade enxerga só a própria ocupação — ninguém sabe, em tempo real, onde a rede tem folga ou está no limite.</p>
-        </div>
-        <div class="problem-card">
-          <span class="num">Decisão tardia</span>
-          <h3>Gestão que reage, não antecipa</h3>
-          <p>Sem dados preditivos, hospitais só percebem a superlotação quando ela já está acontecendo — e mais cara de resolver.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <span class="section-divider container" aria-hidden="true">
-    <svg viewBox="0 0 600 20" preserveAspectRatio="none"><path d="M0,10 L120,10 L140,2 L160,18 L180,10 L600,10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-  </span>
-
-  <!-- A SOLUÇÃO -->
-  <section class="section section--alt reveal">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">A solução ReConecta</span>
-        <h2 class="section-title">Uma rede só, para todo mundo que cuida da sua saúde.</h2>
-        <p class="section-sub">Hospitais atualizam sua ocupação, profissionais mostram sua disponibilidade, e pacientes encontram o cuidado certo — tudo na mesma plataforma, em tempo real.</p>
-      </div>
-      <div class="grid feature-grid">
-        <div class="feature-card">
-          <span class="feature-icon"><svg data-lucide="bed" width="24" height="24" color="white"></svg></span>
-          <h3>Leitos em tempo real</h3>
-          <p>Ocupação por setor, cidade e especialidade, direto dos hospitais parceiros — sem ligação, sem intermediário.</p>
-          <span class="tag">Atualizado a cada minuto</span>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon"><svg data-lucide="users" width="24" height="24" color="white"></svg></span>
-          <h3>Rede de profissionais</h3>
-          <p>Encontre especialistas por região e disponibilidade, ou seja encontrado por hospitais que precisam do seu plantão.</p>
-          <span class="tag">+2.400 especialistas ativos</span>
-        </div>
-        <div class="feature-card">
-          <span class="feature-icon"><svg data-lucide="trending-up" width="24" height="24" color="white"></svg></span>
-          <h3>Inteligência preditiva</h3>
-          <p>ReConecta aprende os padrões da rede e avisa hospitais antes de um setor entrar em sobrecarga.</p>
-          <span class="tag">Antecipa picos de demanda</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA GESTORES -->
-  <section class="section reveal">
-    <div class="container">
-      <div class="cta-banner">
-        <div>
-          <h2>Gestor hospitalar? O painel ReConecta já une operação, financeiro e alertas num só lugar.</h2>
-          <p>Ocupação em tempo real, controle de contratos e visão executiva — sem planilha, sem retrabalho.</p>
-        </div>
-        <div class="actions">
-          <a href="dashboard/operacao.html" class="btn btn--on-ink">Conhecer o painel</a>
-          <a href="contato.html?tipo=cadastro" class="btn" style="background:#fff;color:var(--blue-700);">Cadastrar hospital</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section class="section section--alt reveal">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="eyebrow">Como funciona</span>
-        <h2 class="section-title">Do cadastro à primeira vaga encontrada</h2>
-        <p class="section-sub">Um fluxo simples, pensado para funcionar mesmo nos plantões mais corridos.</p>
-      </div>
-      <div class="grid steps">
-        <div class="step">
-          <h3>Cadastre seu hospital ou perfil</h3>
-          <p>Leva poucos minutos — hospitais informam setores e capacidade, profissionais informam especialidade e região.</p>
-        </div>
-        <div class="step">
-          <h3>A ocupação é atualizada ao vivo</h3>
-          <p>Cada admissão, alta ou troca de plantão reflete na rede na hora, direto do painel interno do hospital.</p>
-        </div>
-        <div class="step">
-          <h3>A rede fica visível para quem precisa</h3>
-          <p>Pacientes, equipes de resgate e outros hospitais enxergam onde há vaga e quem está disponível.</p>
-        </div>
-        <div class="step">
-          <h3>ReConecta antecipa o próximo gargalo</h3>
-          <p>Alertas inteligentes avisam antes da superlotação, para a rede se reorganizar com antecedência.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CIDADES -->
-  <section class="section reveal">
-    <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Cobertura</span>
-        <h2 class="section-title">Presente onde Pernambuco mais precisa</h2>
-        <p class="section-sub">Começamos pela Região Metropolitana do Recife e já crescemos para o interior.</p>
-      </div>
-      <div class="grid city-grid">
-        <span class="city-chip"><span class="dot"></span>Recife</span>
-        <span class="city-chip"><span class="dot"></span>Jaboatão dos Guararapes</span>
-        <span class="city-chip"><span class="dot"></span>Caruaru</span>
-        <span class="city-chip"><span class="dot"></span>Petrolina</span>
-        <span class="city-chip"><span class="dot"></span>Garanhuns</span>
-        <span class="city-chip"><span class="dot"></span>Vitória de Santo Antão</span>
-        <span class="city-chip"><span class="dot"></span>Serra Talhada</span>
-        <span class="city-chip"><span class="dot"></span>Arcoverde</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- STATS ESCURO -->
-  <section class="section section--ink reveal">
-    <div class="container">
-      <div class="section-head section-head--center">
-        <span class="eyebrow" style="background:rgba(255,255,255,.1); color:#fff; border-color:rgba(255,255,255,.2);">Impacto na rede</span>
-        <h2 class="section-title" style="color:#fff;">Números que a peregrinação deixava de existir</h2>
-      </div>
-      <div class="grid stats-strip">
-        <div><strong data-count-to="82">0</strong><span>Hospitais parceiros</span></div>
-        <div><strong data-count-to="42800">0</strong><span>Leitos monitorados/mês</span></div>
-        <div><strong data-count-to="27" data-suffix="%">0</strong><span>Menos tempo até o atendimento</span></div>
-        <div><strong data-count-to="31">0</strong><span>Municípios atendidos</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DEPOIMENTO -->
-  <section class="section reveal">
-    <div class="container" style="max-width:760px;">
-      <div class="testimonial">
-        <p>"Antes, cada troca de plantão virava uma corrida de telefonemas. Com o ReConecta, minha equipe vê a rede inteira e decide em minutos, não em horas."</p>
-        <footer>
-          <span class="avatar-badge">CS</span>
-          <div>
-            <strong>Dra. Camila Salustiano</strong>
-            <span>Diretora clínica — Hospital Regional (rede parceira)</span>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section class="section section--tight reveal">
-    <div class="container">
-      <div class="cta-banner">
-        <div>
-          <h2>Sua rede de saúde conectada começa aqui.</h2>
-          <p>Cadastro gratuito para hospitais e profissionais de Pernambuco.</p>
-        </div>
-        <div class="actions">
-          <a href="contato.html?tipo=cadastro" class="btn" style="background:#fff;color:var(--blue-700);">Cadastrar hospital</a>
-          <a href="profissionais.html" class="btn btn--on-ink">Sou profissional</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="grid footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2-7 4 14 3-10 2 5h5"/></svg></span>
-          <span>ReConecta</span>
-        </a>
-        <p>Uma solução HeaLine para reduzir a peregrinação da saúde em Pernambuco, conectando hospitais, profissionais e pacientes em tempo real.</p>
-        <div class="social-row">
-          <a href="#" aria-label="Instagram"><svg data-lucide="instagram" width="16" height="16"></svg></a>
-          <a href="#" aria-label="LinkedIn"><svg data-lucide="linkedin" width="16" height="16"></svg></a>
-          <a href="#" aria-label="WhatsApp"><svg data-lucide="phone" width="16" height="16"></svg></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4>Navegação</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="profissionais.html">Profissionais</a></li>
-          <li><a href="leitos.html">Leitos</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Plataforma</h4>
-        <ul>
-          <li><a href="dashboard/operacao.html">Painel do hospital</a></li>
-          <li><a href="contato.html?tipo=cadastro">Cadastrar hospital</a></li>
-          <li><a href="contato.html?tipo=cadastro">Cadastrar profissional</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contato</h4>
-        <ul>
-          <li><a href="mailto:contato@healine.com.br">contato@healine.com.br</a></li>
-          <li><a href="tel:+558100000000">(81) 0000-0000</a></li>
-          <li>Recife, Pernambuco</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 HeaLine. Todos os direitos reservados.</span>
-      <span>ReConecta — Conecte. Reconecte. Cresça.</span>
-    </div>
-  </div>
-</footer>
-
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="assets/js/main.js"></script>
+    </footer>
+    <div class="toast"></div>
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>

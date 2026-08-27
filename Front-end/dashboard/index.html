@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Visão geral — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard">
+    <div class="dash-scrim scrim"></div>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>Painel operacional</small></span></a>
+            <nav class="sidebar-nav">
+                <a class="active" href="index.html"><span class="nav-icon">◈</span>Visão geral</a>
+                <a class="" href="capacidade.html"><span class="nav-icon">▦</span>Capacidade</a>
+                <a class="" href="mobilidade.html"><span class="nav-icon">↗</span>Mobilidade</a>
+                <a class="" href="transferencias.html"><span class="nav-icon">⇄</span>Transferências</a>
+                <a class="" href="alertas.html"><span class="nav-icon">!</span>Alertas</a>
+                <a class="" href="inteligencia.html"><span class="nav-icon">⌁</span>Inteligência</a>
+                <a class="" href="relatorios.html"><span class="nav-icon">◴</span>Relatórios</a>
+                <a class="" href="configuracoes.html"><span class="nav-icon">⚙</span>Configurações</a>
+                <a class="" href="operacao.html"><span class="nav-icon">◫</span>Operação</a>
+            </nav>
+            <div class="sidebar-bottom"><span>DADOS DEMONSTRATIVOS</span><a href="../index.html"
+                    style="display:block;margin-top:10px">← Voltar ao site</a></div>
+        </aside>
+        <section class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1>Visão geral</h1><span>Rede demonstrativa · atualização operacional em tempo real</span>
+                </div>
+                <div class="top-actions"><button class="icon-btn mobile-sidebar-toggle"
+                        aria-label="Abrir menu">☰</button><button class="icon-btn js-action"
+                        data-message="Central de notificações aberta.">●</button>
+                    <div class="avatar">GE</div>
+                </div>
+            </header>
+            <main class="dashboard-content">
+                <div class="section-head" style="margin-bottom:22px"><span class="eyebrow">Visão da rede</span>
+                    <h2>O que está acontecendo agora?</h2>
+                    <p class="section-lead">Uma leitura operacional da capacidade, mobilidade e transferência da rede.
+                    </p>
+                </div>
+                <div class="kpi-grid">
+                    <div class="card kpi"><small>Ocupação geral</small><strong>82%</strong><span class="trend">↑ 1,8%
+                            hoje</span></div>
+                    <div class="card kpi"><small>Leitos disponíveis</small><strong>147</strong><span class="trend">↑ 12
+                            desde 10h</span></div>
+                    <div class="card kpi"><small>Transferências pendentes</small><strong>23</strong><span
+                            style="font-size:10px;color:var(--warning)">6 críticas</span></div>
+                    <div class="card kpi"><small>Macas retidas</small><strong>12</strong><span
+                            style="font-size:10px;color:var(--danger)">+3 em 30 min</span></div>
+                    <div class="card kpi"><small>Ambulâncias indisponíveis</small><strong>7</strong><span
+                            style="font-size:10px;color:var(--danger)">2 por retenção</span></div>
+                </div>
+                <div class="dash-layout">
+                    <section class="card panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Ocupação da rede</h2><span>Últimas 24 horas · demonstrativo</span>
+                            </div><span class="status info">REDE AO VIVO</span>
+                        </div>
+                        <div class="chart"><i class="bar" style="height:44%"></i><i class="bar"
+                                style="height:50%"></i><i class="bar" style="height:56%"></i><i class="bar"
+                                style="height:61%"></i><i class="bar" style="height:68%"></i><i class="bar"
+                                style="height:74%"></i><i class="bar" style="height:82%"></i></div>
+                        <div class="bar-labels">
+                            <span>00h</span><span>04h</span><span>08h</span><span>12h</span><span>16h</span><span>20h</span><span>agora</span>
+                        </div>
+                    </section>
+                    <section class="card panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Gargalos da rede</h2><span>Prioridade atual</span>
+                            </div>
+                        </div>
+                        <div class="alert-list">
+                            <div class="alert"><i class="bullet" style="background:var(--danger)"></i>
+                                <div><strong>Hospital X · 94% ocupação</strong><span>8 transferências aguardando</span>
+                                </div>
+                            </div>
+                            <div class="alert"><i class="bullet" style="background:var(--warning)"></i>
+                                <div><strong>Hospital Y · 4 macas retidas</strong><span>maior retenção: 2h17</span>
+                                </div>
+                            </div>
+                            <div class="alert"><i class="bullet" style="background:var(--success)"></i>
+                                <div><strong>Hospital Z · 72% ocupação</strong><span>6 leitos compatíveis
+                                        disponíveis</span></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="dash-layout">
+                    <section class="card panel">
+                        <div class="panel-head">
+                            <div>
+                                <h2>Transferência #1842</h2><span>UPA X → necessidade de UTI adulto</span>
+                            </div><span class="status warn">AGUARDANDO RECURSO</span>
+                        </div>
+                        <div class="match-grid">
+                            <div class="match">
+                                <div>
+                                    <h3>Hospital A</h3>
+                                    <p>2 vagas · 8,4 km · melhor perfil</p>
+                                </div>
+                                <div class="score">96%</div>
+                            </div>
+                            <div class="match">
+                                <div>
+                                    <h3>Hospital B</h3>
+                                    <p>1 vaga · 14,2 km · perfil compatível</p>
+                                </div>
+                                <div class="score">88%</div>
+                            </div>
+                        </div>
+                        <div style="margin-top:12px"><a class="btn btn-primary" href="transferencias.html">Ver
+                                transferência</a></div>
+                    </section>
+                    <section class="card panel">
+                        <div class="panel-head">
+                            <h2>Recursos de mobilidade</h2>
+                        </div>
+                        <div class="network-kpi">
+                            <div><strong>12</strong><span>macas retidas</span></div>
+                            <div><strong>7</strong><span>ambulâncias indisponíveis</span></div>
+                            <div><strong>18 min</strong><span>tempo médio resposta</span></div>
+                            <div><strong>2h17</strong><span>maior retenção</span></div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </section>
+    </div>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
