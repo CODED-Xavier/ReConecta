@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Profissionais — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard">
+    <div class="dash-scrim scrim"></div>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>Painel operacional</small></span></a>
+            <nav class="sidebar-nav">
+                <a class="" href="index.html"><span class="nav-icon">◈</span>Visão geral</a>
+                <a class="active" href="profissionais.html"><span class="nav-icon">▦</span>Profissionais</a>
+                <a class="" href="mobilidade.html"><span class="nav-icon">↗</span>Mobilidade</a>
+                <a class="" href="transferencias.html"><span class="nav-icon">⇄</span>Transferências</a>
+                <a class="" href="alertas.html"><span class="nav-icon">!</span>Alertas</a>
+                <a class="" href="inteligencia.html"><span class="nav-icon">⌁</span>Inteligência</a>
+                <a class="" href="relatorios.html"><span class="nav-icon">◴</span>Relatórios</a>
+                <a class="" href="configuracoes.html"><span class="nav-icon">⚙</span>Configurações</a>
+                <a class="" href="operacao.html"><span class="nav-icon">◫</span>Operação</a>
+            </nav>
+            <div class="sidebar-bottom"><span>DADOS DEMONSTRATIVOS</span><a href="../index.html"
+                    style="display:block;margin-top:10px">← Voltar ao site</a></div>
+        </aside>
+        <section class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1>Profissionais</h1><span>Rede demonstrativa · atualização operacional em tempo real</span>
+                </div>
+                <div class="top-actions"><button class="icon-btn mobile-sidebar-toggle"
+                        aria-label="Abrir menu">☰</button><button class="icon-btn js-action"
+                        data-message="Central de notificações aberta.">●</button>
+                    <div class="avatar">GE</div>
+                </div>
+            </header>
+            <main class="dashboard-content">
+                <div class="section-head" style="margin-bottom:22px"><span class="eyebrow">01 · Profissionais</span>
+                    <h2>Profissionais da rede</h2>
+                    <p class="section-lead">Leitos, setores e profissionais disponíveis por unidade.</p>
+                </div>
+                <div class="dash-grid">
+                    <div class="capacity-widget"><strong>147</strong><span>leitos disponíveis</span></div>
+                    <div class="capacity-widget"><strong>37</strong><span>profissionais disponíveis</span></div>
+                    <div class="capacity-widget"><strong>24</strong><span>equipamentos disponíveis</span></div>
+                </div>
+                <section class="card panel" style="margin-top:14px">
+                    <div class="panel-head">
+                        <h2>Unidades e profissionais</h2>
+                    </div>
+                    <div class="filters dashboard-filters"><input class="field" data-filter-input
+                            placeholder="Buscar unidade ou cidade..." aria-label="Buscar unidade ou cidade"><select
+                            class="field" data-filter-select data-filter="city" aria-label="Filtrar por cidade"><option
+                            value="">Todas as cidades</option><option value="Recife">Recife</option><option
+                            value="Caruaru">Caruaru</option></select><span class="muted" data-result-count></span></div>
+                    <div class="table-wrap">
+                        <table class="data-table">
+                            <thead>
+                                <tr data-item data-city="Recife">
+                                    <th>Hospital</th>
+                                    <th>Cidade</th>
+                                    <th>Ocupação</th>
+                                    <th>Leitos livres</th>
+                                    <th>Equipe</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-item data-city="Caruaru">
+                                    <td>Hospital Esperança Recife</td>
+                                    <td>Recife</td>
+                                    <td>78%</td>
+                                    <td>8</td>
+                                    <td>Disponível</td>
+                                    <td><span class="status ok">ESTÁVEL</span></td>
+                                </tr>
+                                <tr data-item data-city="Recife">
+                                    <td>Hospital Regional do Agreste</td>
+                                    <td>Caruaru</td>
+                                    <td>91%</td>
+                                    <td>3</td>
+                                    <td>1 equipe</td>
+                                    <td><span class="status warn">ATENÇÃO</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Hospital São Marcos</td>
+                                    <td>Recife</td>
+                                    <td>94%</td>
+                                    <td>2</td>
+                                    <td>Limitada</td>
+                                    <td><span class="status danger">CRÍTICO</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

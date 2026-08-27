@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Relatórios — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard">
+    <div class="dash-scrim scrim"></div>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>Painel operacional</small></span></a>
+            <nav class="sidebar-nav">
+                <a class="" href="index.html"><span class="nav-icon">◈</span>Visão geral</a>
+                <a class="" href="capacidade.html"><span class="nav-icon">▦</span>Capacidade</a>
+                <a class="" href="mobilidade.html"><span class="nav-icon">↗</span>Mobilidade</a>
+                <a class="" href="transferencias.html"><span class="nav-icon">⇄</span>Transferências</a>
+                <a class="" href="alertas.html"><span class="nav-icon">!</span>Alertas</a>
+                <a class="" href="inteligencia.html"><span class="nav-icon">⌁</span>Inteligência</a>
+                <a class="active" href="relatorios.html"><span class="nav-icon">◴</span>Relatórios</a>
+                <a class="" href="configuracoes.html"><span class="nav-icon">⚙</span>Configurações</a>
+                <a class="" href="operacao.html"><span class="nav-icon">◫</span>Operação</a>
+            </nav>
+            <div class="sidebar-bottom"><span>DADOS DEMONSTRATIVOS</span><a href="../index.html"
+                    style="display:block;margin-top:10px">← Voltar ao site</a></div>
+        </aside>
+        <section class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1>Relatórios</h1><span>Rede demonstrativa · atualização operacional em tempo real</span>
+                </div>
+                <div class="top-actions"><button class="icon-btn mobile-sidebar-toggle"
+                        aria-label="Abrir menu">☰</button><button class="icon-btn js-action"
+                        data-message="Central de notificações aberta.">●</button>
+                    <div class="avatar">GE</div>
+                </div>
+            </header>
+            <main class="dashboard-content">
+                <div class="section-head" style="margin-bottom:22px"><span class="eyebrow">Relatórios</span>
+                    <h2>Transforme operação em leitura executiva.</h2>
+                    <p class="section-lead">Indicadores para acompanhar capacidade, mobilidade, transferências e
+                        gargalos.</p>
+                </div>
+                <div class="three grid">
+                    <div class="card feature"><span class="feature-icon">PDF</span>
+                        <h3>Capacidade da rede</h3>
+                        <p>Ocupação, disponibilidade e distribuição de recursos.</p><button
+                            class="btn btn-ghost js-action" data-message="Relatório preparado na demonstração.">Gerar
+                            relatório</button>
+                    </div>
+                    <div class="card feature"><span class="feature-icon">CSV</span>
+                        <h3>Transferências</h3>
+                        <p>Solicitações, tempos, destinos e status.</p><button class="btn btn-ghost js-action"
+                            data-message="Exportação preparada na demonstração.">Exportar</button>
+                    </div>
+                    <div class="card feature"><span class="feature-icon">↗</span>
+                        <h3>Recuperação da rede</h3>
+                        <p>Retenção de macas e indisponibilidade de ambulâncias.</p><button
+                            class="btn btn-ghost js-action"
+                            data-message="Indicadores preparados na demonstração.">Visualizar</button>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

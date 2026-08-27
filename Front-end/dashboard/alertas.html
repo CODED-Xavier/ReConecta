@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Alertas — ReConecta</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="dashboard">
+    <div class="dash-scrim scrim"></div>
+    <div class="app-shell">
+        <aside class="sidebar"><a class="brand" href="../index.html"><span class="brand-mark"><svg viewBox="0 0 24 24"
+                        fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round">
+                        <path d="M2 12h4l2-7 4 14 3-10 2 5h5" />
+                    </svg></span><span>ReConecta<small>Painel operacional</small></span></a>
+            <nav class="sidebar-nav">
+                <a class="" href="index.html"><span class="nav-icon">◈</span>Visão geral</a>
+                <a class="" href="capacidade.html"><span class="nav-icon">▦</span>Capacidade</a>
+                <a class="" href="mobilidade.html"><span class="nav-icon">↗</span>Mobilidade</a>
+                <a class="" href="transferencias.html"><span class="nav-icon">⇄</span>Transferências</a>
+                <a class="active" href="alertas.html"><span class="nav-icon">!</span>Alertas</a>
+                <a class="" href="inteligencia.html"><span class="nav-icon">⌁</span>Inteligência</a>
+                <a class="" href="relatorios.html"><span class="nav-icon">◴</span>Relatórios</a>
+                <a class="" href="configuracoes.html"><span class="nav-icon">⚙</span>Configurações</a>
+                <a class="" href="operacao.html"><span class="nav-icon">◫</span>Operação</a>
+            </nav>
+            <div class="sidebar-bottom"><span>DADOS DEMONSTRATIVOS</span><a href="../index.html"
+                    style="display:block;margin-top:10px">← Voltar ao site</a></div>
+        </aside>
+        <section class="dashboard-main">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1>Alertas</h1><span>Rede demonstrativa · atualização operacional em tempo real</span>
+                </div>
+                <div class="top-actions"><button class="icon-btn mobile-sidebar-toggle"
+                        aria-label="Abrir menu">☰</button><button class="icon-btn js-action"
+                        data-message="Central de notificações aberta.">●</button>
+                    <div class="avatar">GE</div>
+                </div>
+            </header>
+            <main class="dashboard-content">
+                <div class="section-head" style="margin-bottom:22px"><span class="eyebrow">Central de alertas</span>
+                    <h2>Sinais que exigem atenção.</h2>
+                    <p class="section-lead">Priorize eventos que podem comprometer a capacidade da rede.</p>
+                </div>
+                <section class="card panel">
+                    <div class="panel-head">
+                        <h2>Alertas ativos</h2><button class="btn btn-ghost js-action"
+                            data-message="Alertas marcados como lidos.">Marcar como lidos</button>
+                    </div>
+                    <div class="alert-list">
+                        <div class="alert"><i class="bullet" style="background:var(--danger)"></i>
+                            <div><strong>Crítico · Hospital São Marcos em 94%</strong><span>UTI pediátrica · há 4
+                                    min</span></div>
+                        </div>
+                        <div class="alert"><i class="bullet" style="background:var(--danger)"></i>
+                            <div><strong>Crítico · 4 macas retidas no Hospital Y</strong><span>maior retenção: 2h17 · há
+                                    6 min</span></div>
+                        </div>
+                        <div class="alert"><i class="bullet" style="background:var(--warning)"></i>
+                            <div><strong>Atenção · demanda de cardiologia +18%</strong><span>últimas 2 horas ·
+                                    Recife</span></div>
+                        </div>
+                        <div class="alert"><i class="bullet" style="background:var(--success)"></i>
+                            <div><strong>Recuperação · Hospital Z liberou 6 leitos</strong><span>compatíveis com
+                                    solicitações pendentes · há 8 min</span></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </div>
+    <div class="toast"></div>
+    <script src="../assets/js/app.js"></script>
+</body>
+
+</html>
